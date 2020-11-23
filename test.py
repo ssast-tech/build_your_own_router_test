@@ -182,7 +182,7 @@ def main(args):
     deduction = test_ping("client ping 172.64.3.1",client,"172.64.3.1",strict_mode=strict_mode)
     credit-=deduction
 
-    deduction = test_ping("client ping 172.64.3.1",client,"10.0.1.1",strict_mode=strict_mode)
+    deduction = test_ping("client ping 10.0.1.1",client,"10.0.1.1",strict_mode=strict_mode)
     credit-=deduction
 
     deduction = test_ping("client ping server1",client,server1.IP(),strict_mode=strict_mode)
