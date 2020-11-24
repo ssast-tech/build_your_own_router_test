@@ -1,4 +1,4 @@
-# Build Your Own Route Test Script
+# Build Your Own Router Test Script
 ## Set Up
 
 ### Get `test.py`
