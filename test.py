@@ -124,6 +124,11 @@ def test_traceroute(infoStr,client,target_ip,ips,strict_mode = False):
             print("Traceroute has unreachable measure!")
             print(res)
             return 5
+    if re.search('!H',res):
+        print("Error!!!")
+        print(res)
+        return 5
+    res = ''.join(res.splitlines()[1:])
     for ip in ips:
         ip.replace(".","\.")
         if not re.search(ip,res):
